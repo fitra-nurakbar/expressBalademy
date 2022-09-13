@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+     head
+          meta(charset="UTF-8")
+          meta(http-equiv="X-UA-Compatible" content="IE=edge")
+          meta(name="viewport" content="width=device-width, initial-scale=1.0")
+          link(rel="stylesheet" href="/style.css")
+          title Home
+     body 
+          include components/navbar.pug
+          .content
+               h1 PokeApi
+               h2 Count : #{data.count}
+               .container
+                    - if(pokemon.length > 0)
+                         - for(let poke of pokemon )
+                              .card
+                                   p #{poke.name}
+                    - else 
+                         p(style="color: red; font-weight: bold;") Data Pokemon Kosong😴 
+               .button 
+                    span Prev
+                    span Next
+          include components/footer.pug

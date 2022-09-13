@@ -1,0 +1,60 @@
+:root {
+  --max: 1200px;
+  --m-auto: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.header {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: fixed;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+}
+.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.card {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.button {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  text-align: center;
+}
